@@ -1,0 +1,24 @@
+@import './settings.scss';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-text;
+  margin: 0;
+  padding: 0;
+  background: lighten($color-dark, 75%);
+}
+
+a, a:hover, a:visited {
+  text-decoration: none;
+}
+
+h2 {
+  font-family: $font-header;
+}
+
+h2 {
+  font-size: $base-size + 20;
+}

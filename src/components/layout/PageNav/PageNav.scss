@@ -1,0 +1,38 @@
+@import '../../../styles/settings.scss';
+
+.main-nav {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  bottom: ($base-size * -8);
+
+  @media (max-width: 700px) {
+    justify-content: center;
+  }
+
+  a {
+    font-size: 14px;
+    font-weight: $font-bold;
+    text-transform: uppercase;
+    color: $color-main;
+    text-decoration: none;
+    margin-right: ($base-size * 2);
+    text-align: center;
+    padding: $base-size ($base-size * 2);
+    background: darken($color-dark, 5%);
+    border-top-left-radius: $radius;
+    border-top-right-radius: $radius;
+
+    @media (max-width: 700px) {
+      margin: 0 5px;
+    }
+
+    &.active {
+      background: lighten($color-dark, 75%);
+    }
+
+  }
+
+}

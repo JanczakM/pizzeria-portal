@@ -3,3 +3,24 @@
 .component {
   padding: $base-size;
 }
+
+.cards {
+  &_container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &_card {
+    margin: 0 5px;
+    min-width: 280px;
+  }
+}
+
+.table_title {
+  font-weight: $font-bold;
+  text-align: center;
+  font-size: $base-size + 10;
+}
+
+.button_add {
+  margin: 0 auto 8px;
+}

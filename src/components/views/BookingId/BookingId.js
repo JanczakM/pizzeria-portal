@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './BookingId.scss';
 
-const BookingId = ({bookingId}) => (
+const BookingId = (props) => (
   <div className={styles.component}>
     <h2>Booking</h2>
-    <h3>id: {bookingId}</h3>
+    <h3>id: {props.match.params.id}</h3>
   </div>
 );
 

@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from './Dashboard.scss';
+import './Dashboard.scss';
 
 const Dashboard = () => (
-  <div className={styles.component}>
+  <div className='component'>
     <h2>Dashboard</h2>
   </div>
 );
