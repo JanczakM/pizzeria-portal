@@ -24,3 +24,11 @@
 .button_add {
   margin: 0 auto 8px;
 }
+
+.ready::after {
+  content: "";
+  width: 100px;
+  height: 3px;
+  position: absolute;
+  background: linear-gradient(to right, $color-dark, $color-light);
+}
