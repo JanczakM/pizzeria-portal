@@ -1,5 +1,15 @@
 @import '../../../styles/settings.scss';
 
-.component {
+.booking-component {
   padding: $base-size;
+}
+
+.MuiFormControl-root {
+  min-width: 260px !important;
+  margin: 30px !important;
+}
+
+.MuiFormGroup-root {
+  margin: 30px !important;
+  display: block !important;
 }

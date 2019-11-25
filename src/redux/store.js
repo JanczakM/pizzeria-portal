@@ -2,6 +2,7 @@ import {combineReducers, createStore, applyMiddleware} from 'redux';
 import productReducer from './productRedux';
 import eventsReducer from './eventsRedux';
 import bookingsReducer from './bookingsRedux';
+import ordersReducer from './ordersRedux';
 import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
@@ -28,6 +29,13 @@ const initialState = {
     },
     data: [],
   },
+  orders: {
+    loading: {
+      active: false,
+      error: false,
+    },
+    data: [],
+  },
 };
 
 // define reducers
@@ -35,6 +43,7 @@ const reducers = {
   products: productReducer,
   events: eventsReducer,
   bookings: bookingsReducer,
+  orders: ordersReducer,
 };
 
 // add blank reducers for initial state properties without reducers

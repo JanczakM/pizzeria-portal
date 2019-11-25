@@ -101,13 +101,13 @@ class Tables extends React.Component {
               return <p className='row' key={hour}>
                 {events.map(event => {
                   if((hour >= event.hour && hour <= event.finish) && event.table === 1 && (event.repeat !== false || event.date === today)){
-                    return <Link key={event.id} to={`${process.env.PUBLIC_URL}/tables/event/:${event.id}`}>Event id:  {event.id}</Link>;
+                    return <Link key={event.id} to={`${process.env.PUBLIC_URL}/tables/event/${event.id}`}>Event id:  {event.id}</Link>;
                   }
                 }
                 )}
                 {bookings.map(booking => {
                   if((hour >= booking.hour && hour <= booking.finish) && booking.table === 1 && (booking.repeat !== false || booking.date === today)){
-                    return <Link key={booking.id} to={`${process.env.PUBLIC_URL}/tables/booking/:${booking.id}`}>Booking id:  {booking.id}</Link>;
+                    return <Link key={booking.id} to={`${process.env.PUBLIC_URL}/tables/booking/${booking.id}`}>Booking id:  {booking.id}</Link>;
                   }
                 }
                 )}
@@ -120,13 +120,13 @@ class Tables extends React.Component {
               return <p className='row' key={hour}>
                 {events.map(event => {
                   if((hour >= event.hour && hour <= event.finish) && event.table === 2 && (event.repeat !== false || event.date === today)){
-                    return <Link key={event.id} to={`${process.env.PUBLIC_URL}/tables/event/:${event.id}`}>Event id:  {event.id}</Link>;
+                    return <Link key={event.id} to={`${process.env.PUBLIC_URL}/tables/event/${event.id}`}>Event id:  {event.id}</Link>;
                   }
                 }
                 )}
                 {bookings.map(booking => {
                   if((hour >= booking.hour && hour <= booking.finish) && booking.table === 2 && (booking.repeat !== false || booking.date === today)){
-                    return <Link key={booking.id} to={`${process.env.PUBLIC_URL}/tables/booking/:${booking.id}`}>Booking id:  {booking.id}</Link>;
+                    return <Link key={booking.id} to={`${process.env.PUBLIC_URL}/tables/booking/${booking.id}`}>Booking id:  {booking.id}</Link>;
                   }
                 }
                 )}
@@ -139,13 +139,13 @@ class Tables extends React.Component {
               return <p className='row' key={hour}>
                 {events.map(event => {
                   if((hour >= event.hour && hour <= event.finish) && event.table === 3 && (event.repeat !== false || event.date === today)){
-                    return <Link key={event.id} to={`${process.env.PUBLIC_URL}/tables/event/:${event.id}`}>Event id:  {event.id}</Link>;
+                    return <Link key={event.id} to={`${process.env.PUBLIC_URL}/tables/event/${event.id}`}>Event id:  {event.id}</Link>;
                   }
                 }
                 )}
                 {bookings.map(booking => {
                   if((hour >= booking.hour && hour <= booking.finish) && booking.table === 3 && (booking.repeat !== false || booking.date === today)){
-                    return <Link key={booking.id} to={`${process.env.PUBLIC_URL}/tables/booking/:${booking.id}`}>Booking id:  {booking.id}</Link>;
+                    return <Link key={booking.id} to={`${process.env.PUBLIC_URL}/tables/booking/${booking.id}`}>Booking id:  {booking.id}</Link>;
                   }
                 }
                 )}

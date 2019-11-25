@@ -8,13 +8,13 @@ import {theme} from './components/layout/MainLayout/Palette';
 
 
 import Dashboard from './components/views/Dashboard/Dashboard';
-import Kitchen from './components/views/Kitchen/Kitchen';
+import Kitchen from './components/views/Kitchen/KitchenContainer';
 import Login from './components/views/Login/Login';
 import Ordering from './components/views/Ordering/Ordering';
 import OrderingNew from './components/views/OrderingNew/OrderingNewContainer';
 import Tables from './components/views/Tables/TablesContainer';
 import EventId from './components/views/EventId/EventId';
-import BookingId from './components/views/BookingId/BookingId';
+import BookingId from './components/views/BookingId/BookingIdContainer';
 import OrderId from './components/views/OrderId/OrderId';
 
 

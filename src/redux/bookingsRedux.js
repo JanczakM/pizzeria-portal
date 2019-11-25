@@ -38,6 +38,21 @@ export const fetchBookingsFromAPI = () => {
   };
 };
 
+export const patchBookingsToAPI = (bookingId, changedData, changedValue) => {
+  return (dispatch, getState) => {
+    Axios
+      .patch(`${api.url}/${api.booking}?id=${bookingId}`, {
+        hangedData: changedValue,
+      })
+      .then(function (response) {
+        console.log('response', response);
+      })
+      .catch(function (error) {
+        console.log( error);
+      });
+  }
+}
+
 /* reducer */
 export default function reducer(statePart = [], action = {}) {
   switch (action.type) {
